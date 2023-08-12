@@ -1,0 +1,103 @@
+<html>
+<head>
+<html>
+<head>
+<script>
+function validateForm() {
+let x = document.myForm.fname.value;
+let y = document.myForm.sname.value;
+let mno = document.myForm.mno.value;
+let pcode = document.myForm.pword.value;
+let email = document.myForm.mail.value;
+if (x == "" )
+{
+alert("Enter the name");
+return false;
+}
+if (y == "" )
+{
+alert("Enter the sname");
+return false;
+}
+if (isNaN (mno))
+{
+alert("Enter the mno correctly");
+}
+if (pcode.length <= 7)
+{
+alert("mobile password must contain atleast 6 letters");
+}
+if (mno.length > 10)
+{
+alert("mobile number must contain atleast 10 numbers");
+}
+if(email.length <= 7)
+{
+alert("email should be contains atleast 7 letters");
+}
+}
+</script>
+<style>
+body {
+background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSARk6d8Ro7998IxxKSpa2c1XGm9fsFR007A&usqp=CAU');
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+}
+</style>
+<body style="background-color:powderblue;">
+<h1><center><i>REGISTER FORM</i></center></h1>
+</head>
+<center>
+<table>
+<form name="myForm" onsubmit="return validateForm()" method="post">
+<tr>
+<td>Name:</td><td><input type="text" name="fname"></td>
+</tr>
+<tr>
+<td>Surname:</td><td><input type="text" name="sname">
+</td>
+</tr>
+<tr>
+<td>Date of birth</td><td><input type="date">
+</td>
+</tr>
+
+</tr>
+<tr>
+<td>Email id</td><td><input type="email" name="mail">
+</td>
+</tr>
+<tr>
+<td>
+College Name</td><td><select name="college name"
+<option value="">-- select one --</option>
+<option value="afghan">Alpha College.</option>
+<option value="albanian">Albert Einstein College.</option>
+<option value="indian">indian College.</option>
+<option value="italian">PSG College.</option>
+<option value="american">ameriacn college.</option>
+</select>
+</td>
+</tr>
+<tr>
+<td>Gender</td><td><input type="radio" name="gender" value="male" 
+id="03">male<input type="radio" name="gender" value="female" id="03">female
+</td>
+</tr>
+<tr>
+<td> Workshop:</td><td><input type="checkbox" name="workshop" value="Network Security">Network Security.<br>
+<input type="checkbox" name="workshop" value="Data Science and  Enginering">Data Science and  Enginering.<br>
+<input type="checkbox" name="workshop" value="Big Data Analytics."> Big Data Analytics.<br>
+<input type="checkbox" name="workshop" value="Machine Learning.">Machine Learning.
+</td>
+</tr>
+</tr>
+<tr>
+<td><input type="submit" value="submit"></td>
+</tr>
+</form>
+</table>
+</center>
+</body>
+</html>
