@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="pictures/logo.jpeg">
+    <title>REGISTER FORM</title>
+    <style>
+        body {
+            background-image: url('pictures/college.jpeg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            background-color: powderblue;
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            color: darkblue;
+        }
+        table {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        td {
+            padding: 10px;
+        }
+    </style>
+    <script>
+        function validateForm() {
+            let x = document.myForm.fname.value;
+            let y = document.myForm.sname.value;
+            let mno = document.myForm.mno.value;
+            let pcode = document.myForm.pword.value;
+            let email = document.myForm.mail.value;
+            
+            if (x == "") {
+                alert("Enter the name");
+                return false;
+            }
+            if (y == "") {
+                alert("Enter the surname");
+                return false;
+            }
+            if (isNaN(mno)) {
+                alert("Enter the mobile number correctly");
+                return false;
+            }
+            if (pcode.length <= 7) {
+                alert("Password must contain at least 6 characters");
+                return false;
+            }
+            if (mno.length != 10) {
+                alert("Mobile number must contain exactly 10 digits");
+                return false;
+            }
+            if (email.length <= 7) {
+                alert("Email should contain at least 7 characters");
+                return false;
+            }
+            return true;
+        }
+    </script>
+</head>
+<body>
+    <h1><center><i>REGISTER FORM</i></center></h1>
+    <center>
+        <form name="myForm" onsubmit="return validateForm()" method="post">
+            <table>
+                <tr>
+                    <td>Name:</td>
+                    <td><input type="text" name="fname"></td>
+                </tr>
+                <tr>
+                    <td>Surname:</td>
+                    <td><input type="text" name="sname"></td>
+                </tr>
+                <tr>
+                    <td>Date of Birth:</td>
+                    <td><input type="date" name="dob"></td>
+                </tr>
+                <tr>
+                    <td>Email ID:</td>
+                    <td><input type="email" name="mail"></td>
+                </tr>
+                <tr>
+                    <td>College Name:</td>
+                    <td>
+                        <select name="college">
+                            <option value="">-- select one --</option>
+                            <option value="alpha">Alpha College</option>
+                            <option value="albert">Albert Einstein College</option>
+                            <option value="indian">Indian College</option>
+                            <option value="psg">PSG College</option>
+                            <option value="american">American College</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Gender:</td>
+                    <td>
+                        <input type="radio" name="gender" value="male"> Male
+                        <input type="radio" name="gender" value="female"> Female
+                    </td>
+                </tr>
+                <tr>
+                    <td>Workshop:</td>
+                    <td>
+                        <input type="checkbox" name="workshop" value="Network Security"> Network Security<br>
+                        <input type="checkbox" name="workshop" value="Data Science and Engineering"> Data Science and Engineering<br>
+                        <input type="checkbox" name="workshop" value="Big Data Analytics"> Big Data Analytics<br>
+                        <input type="checkbox" name="workshop" value="Machine Learning"> Machine Learning
+                    </td>
+                </tr>
+                <tr>
+                    <td>Mobile Number:</td>
+                    <td><input type="text" name="mno"></td>
+                </tr>
+                <tr>
+                    <td>Password:</td>
+                    <td><input type="password" name="pword"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">
+                        <input type="submit" value="Submit">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </center>
+</body>
+</html>

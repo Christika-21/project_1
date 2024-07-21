@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gallery</title>
+    <link rel="stylesheet" href="file.css">
+    <link rel="icon" type="image/x-icon" href="pictures/logo.jpeg">
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: normal;
+            font-size: 20px;
+            color: black;
+            background-color: white;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            color:green;
+            text-align: center;
+        }
+        h2 {
+            color: green;
+            text-align: center;
+        }
+        .gallery {
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+        }
+        .pic {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: space-around;
+        }
+        .pic .image {
+            flex: 1 1 calc(33.333% - 20px);
+            box-sizing: border-box;
+        }
+        .pic .image img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li {
+            margin-bottom: 10px;
+        }
+        a {
+            display: inline-block;
+            margin: 10px 0;
+            text-align: center;
+        }
+        @media (max-width: 768px) {
+            .pic .image {
+                flex: 1 1 calc(45% - 20px);
+            }
+        }
+        @media (max-width: 480px) {
+            .pic .image {
+                flex: 1 1 calc(100% - 20px);
+            }
+        }
+        .logo img {
+            max-width: 100%; /* Adjust this value to reduce logo size */
+            height: auto;
+            align-items:center ;
+            margin-left: 30%;
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 15px;
+            background-color: #444;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        a:hover {
+            background-color: #666;
+        }
+        body{
+border-style: solid;
+        }
+    </style>
+</head>
+<body>
+    <div class="gallery">
+        <center><div class="logo"><img src="pictures/logo.png" alt="College Logo"></div></center>
+        <br><br><br><br><br><br><br><br><br>
+        <br><br><br><br>
+
+        <h1>Pictures of our college</h1><br>
+
+        <p>1. Kamaraj College is a vibrant and friendly community that enjoys the reputation of being one of the most respected and admired educational institutions in southern Tamil Nadu.</p><br>
+        <p>2. The Admin building houses the Central Library, Business Incubation Centre, Research Centre, Alumni Centre, Chess Club, Principal’s Office, and Society Conference Hall. Marine Research Centre has interesting live sea-water animals on display.</p><br>
+        <p>3. The campus has various sporting facilities including a full-size Football Ground, Basketball Court, Kabaddi Ground, and Kho-Kho ground.</p><br>
+        <br><br>
+        <h2>The other campus buildings include:</h2>
+        <br>
+        <p>1. Admin Block</p><br>
+        <p>2. Auditorium</p><br>
+        <p>3. Marine Research Centre</p><br>
+        <p>4. Vinayagar Temple</p><br>
+        <p>5. Canteen</p><br>
+        <p>6. Boy’s Hostel Building</p><br>
+        <p>7. Girls Hostel Building</p><br>
+
+        <br><br>
+        <div class="pic">
+            <div class="image"><img src="pictures/college.jpeg" alt="Campus Image 1"></div>
+            <div class="image"><img src="pictures/college3.jpeg" alt="Campus Image 2"></div>
+            <div class="image"><img src="pictures/college4.jpeg" alt="Campus Image 3"></div>
+            <div class="image"><img src="pictures/college6.jpeg" alt="Campus Image 4"></div>
+            <div class="image"><img src="pictures/college.jpeg" alt="Campus Image 5"></div>
+            <div class="image"><img src="pictures/college1.jpeg" alt="Campus Image 6"></div>
+            <div class="image"><img src="pictures/college8.jpeg" alt="Campus Image 7"></div>
+            <div class="image"><img src="pictures/college9.jpeg" alt="Campus Image 8"></div>
+            <div class="image"><img src="pictures/college.jpeg" alt="Campus Image 9"></div>
+        </div>
+        <br><br>
+        <ul>
+            <li>The students hostel offers a variety of infrastructural facilities, including ceiling fans, tables, chairs, cupboards, and a writing pad in each room, bathroom, recreational facilities, gymnasium, purifier, medical facilities, 24*7 Wi-Fi internet connection, tuck shop, CCTV surveillance camera, newspaper reading room, residential doctor to render service to the hostel students, and computer room with 16 systems with 45 Mbps internet connection.</li>
+            <li>During working hours, a well-equipped dispensary is accessible on campus. Students who require medical assistance can receive it immediately because the institute has a full-time doctor on campus. A well-equipped gymnasium is available within campus for students and faculty members.</li>
+            <li>The library is fully automated and well-equipped with modern amenities. The library has books, journals, CD-ROMs, online journals, question banks, project reports, and other materials. Surveillance video cameras are placed at strategic locations.</li>
+            <li>The books and journals are accessed using an Open Access System. The institute has a well-modernized computing environment within the campus, with modernized computer labs with high-configuration computer systems, to meet the demands of industries and to improve the learning of the students.</li>
+            <li>In the canteen, hygienic and nutritious foods are available at a reasonable price. A tuckshop is also available that sells snacks and soft drinks for students. A well-equipped laboratory caters to the academic needs of students. During working hours, students can make use of the lab at any time.</li>
+        </ul>
+        <br><br>
+        <h1>The overall surroundings in one clip:</h1>
+        <h2>Touch the below link to view:</h2>
+        <center>
+        <a href="video.html">Video clip of the college</a><br>
+        <a href="home.html">Home page</a><br>
+        </center>
+    </div>
+</body>
+</html>

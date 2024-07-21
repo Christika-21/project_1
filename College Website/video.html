@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="pictures/logo.jpeg">
+    <title>College Video Clip</title>
+    <style>
+        body {
+            background-color: white;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: black;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-image: url("pictures/college.jpeg"); /* Replace with your image path */
+            background-size: cover; /* Ensures the image covers the entire page */
+            background-position: center; /* Centers the background image */
+            background-repeat: no-repeat; /* Prevents the image from repeating */
+        }
+        h1 {
+            color: black;
+            margin: 20px 0;
+        }
+        video {
+            max-width: 100%;
+            height: auto;
+            border: 3px solid black; /* Optional: Adds a border around the video */
+            border-radius: 10px; /* Optional: Rounds the corners of the border */
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Full viewport height */
+            background: rgba(255, 255, 255, 0.8); /* Optional: Adds a semi-transparent background behind the content */
+            padding: 20px;
+            border-radius: 10px; /* Optional: Rounds the corners of the container */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <h1>College Video Clip</h1>
+            <video controls>
+                <source src="college_video/clgvideo.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video><br><br>
+            <a href="gallery.html">Gallery page</a><br>
+            <a href="home.html">Home page</a><br>
+        </div>
+    </div>
+
+</body>
+</html>
